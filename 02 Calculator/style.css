@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000ff;
+    background: linear-gradient(135deg, #080150ff 0%, #2e0202ff 100%);
+}
+
+
+#display {
+    width: 100%;
+    max-width: 330px;
+    height: 60px;
+ 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(192, 191, 191, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 0 20px;
+    color: white;
+    background-color: black;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+.btn {
+    padding: 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #007bff 60%, #0056b3 100%);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover, .btn:focus {
+    background: linear-gradient(135deg, #0056b3 60%, #007bff 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    outline: none;
+}
+
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#equals {
+    background: linear-gradient(135deg, #28a745 60%, #218838 100%);
+}
+
+#AC {
+    background: linear-gradient(135deg, #c92636ff 60%, #c82333 100%);
+     color: black;
+}
+
+#clear {
+    background: linear-gradient(135deg, #ffc107 60%, #e0a800 100%);
+    color: black;
+}
+
+
+#openBracket, #closeBracket {
+    background: linear-gradient(135deg, #17a2b8 60%, #138496 100%);
+}
+#divide, #multiply, #subtract, #add {
+    background: linear-gradient(135deg, #6c757d 60%, #5a6268 100%);
+}
