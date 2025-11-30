@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+}
+
+.container{
+    background-color: #3c3c3c;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 20px;
+    color: white;
+    
+}
+
+.password-box{
+    display: flex;
+}
+#passwordResult{
+    padding: 15px;
+    flex-grow: 1;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #111;
+    font-size: 1.1rem;
+    color: white;
+}
+
+
+#copyBtn{
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: cyan;
+    margin-left: -40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+#copyBtn:hover,#generateBtn:hover{
+    
+    transform: scale(1.05);
+}
+#copyBtn:active,#generateBtn:active{
+    
+    transform: scale(1);
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#length{
+    outline: none;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(177, 233, 233);
+   
+}
+
+#generateBtn{
+    padding: 15px;
+    background-color: cyan;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
